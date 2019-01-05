@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos de Formulário</title>
+</head>
+<body>
+
+    <!--Eventos 
+        onfocus=""  -  Dispara quando o elemento de formulário estiver em foto, ou clicado
+        onblur=""  -  Dispara quando o elemento do formulário clicado perde o foco, ou quando clica em outra área,
+        onchange=""  -  Dispara quando seleciona um estado(é melhor usado em tags select), no primeiro estado ele não dispara( Select ) só nos demais.
+    -->
+
+    <!--Looping infinito com Alert
+    <input type="text" onfocus="alert('Hello, World')">
+    -->
+
+    <input onfocus="console.log('Teste de Focus')" onblur="console.log('Deixou o Focus')" type="text">
+    
+    <select onchange="console.log('Teste de Change')">
+
+        <option value="">-- Select --</option>
+        <option value="1">Primeiro</option>
+        <option value="2">Segundo</option>
+
+    </select>
+
+</body>
+</html>

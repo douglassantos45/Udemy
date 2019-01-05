@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evento com Mouse</title>
+
+    <script>
+
+        //Eventos do Mouse
+        /*
+            onclick=""  -  Um click no Mouse, 
+            ondblclick=""  -  Dois click no Mouse,
+            onmouseup=""  -  Quando da um click(pode segurar) e solta-lo dentro do block(se for fora não funcionará),  
+            onmouseover=""  - Quando passa o Mouse em cima do objeto com a ação
+            onmouseout=""  -  Quando o ponteiro do Mouse sái da região do objeto ação
+        */
+    
+        function acao () {
+
+            alert('Testando o Onclick');
+        }
+
+        function acao2 () {
+
+            alert('Testando a outra ação');
+        }
+    
+    </script>
+
+</head>
+<body>
+    
+    <!-- Bloco com 1 ação -->
+    <div onmouseover="acao()" style="background: gray; height: 150px; width: 150px;"></div>
+
+    <!-- Bloco com 2 ações -->
+    <div onclick="acao()" onmouseout="acao2()" style="background: blue; height: 150px; width: 150px;"></div>
+
+</body>
+</html>

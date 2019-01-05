@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulando Cor do Fundo</title>
+
+    <script>
+        
+        function mudarCordeFundo ( cordeFundo ) {
+
+            //Atributo de CSS que são aplicado, os atributos de stylee não pode ser usados com - "traço", exemplo, background-color, tem que ser usado assim: backgroundColor, com o ultimo atributo em maiúsculo
+            document.getElementById('div_a_ser_mudada').style.background = cordeFundo;//Estamos selecionando o style é a partir do atributo style, que está no elemento div, atruindo a cordeFundo recebido como parametro do input como; red, green e blue
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <input type="submit" onclick="mudarCordeFundo('red')" value="Vermelho">
+    <input type="submit" onclick="mudarCordeFundo('green')" value="Verde">
+    <input type="submit" onclick="mudarCordeFundo('blue')" value="Azul">
+    <hr>
+
+                               <!--A partir do Style, o mesmo do function-->
+    <div id="div_a_ser_mudada" style="border: 1px solid gray; width: 300px; height: 300px;"></div>
+
+</body>
+</html>

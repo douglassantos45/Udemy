@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Utilizando funções Callback</title>
+
+    <script>
+        
+        function exibirArtigo (id, callbackSucess, callbackErro) {
+
+            if ( true ) {
+
+                callbackSucess('Uma viagem no Tempo', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem labore corrupti voluptates repudiandae blanditiis illum, suscipit pariatur iure, impedit eius quas tenetur perspiciatis quod sint at! Eaque dolorem rem nam.');
+
+            } else {
+                
+                callbackErro('Ocorreu um erro');
+            }
+        }
+
+        //Passando o CallbackSucess para uma variável
+
+        var callbackSucess = function ( titulo, descricao ) {
+
+            document.write('<h1>' + titulo + '</h1>');
+            document.write('<hr /><br />');
+            document.write('<p>' + descricao + '</p>');
+
+        }
+
+        //Passando o CallbackErro para uma variável
+        var callbackErro = function ( erro ) {
+
+            document.write('<h5><b>Erro</b>: ' + erro + '<h5>');
+
+        }
+
+        //Chamando a função com os parâmetros
+        exibirArtigo(1, callbackSucess, callbackErro);
+    
+    </script>
+</head>
+<body>
+</body>
+</html>

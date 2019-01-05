@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulando String</title>
+
+    <script>
+    
+        document.write('<h3>Douglas Tott</h3>');
+        document.write('<hr />');
+
+        //Length - Contar caracteres
+        document.write('<h5>Lenght</h5>');
+        var nome = 'Douglas Tott';
+        document.write('Douglas Tott'.length + '<br />');
+
+        //indexOf - Retornar a primeira ocorrência de uma String pela Letra
+        document.write('<h5>IndexOf de g</h5>');
+        var nome = 'Douglas Tott';
+        document.write('Douglas Tott'.indexOf('g') + '<br />');
+
+        //toLowerCase - Deixa todos as letras em minúsculo
+        document.write('<h5>ToLowerCase</h5>');
+        var nome = 'Douglas Tott';
+        document.write('Douglas Tott'.toLowerCase() + '<br />');
+
+        //toUpperCase - Deixa todas as letras em maiúsculo
+        document.write('<h5>ToLowerCase</h5>');
+        document.write('Douglas Tott'.toUpperCase() + '<br />');
+
+        //replace - Pesquisa um determinado valor e substitui por outro
+        document.write('<h5>Replace Tott para Silva</h5>');
+        var nome = 'Douglas Tott';
+        document.write(nome.replace('Tott', 'Silva') + '<br />');
+
+        //substr - Esse método permite extrair parte de uma String de uma posição inicial até, a ultima posição da String
+        document.write('<h5>Substr do 8 ao 11</h5>');
+        var nome = 'Douglas Tott';
+        document.write(nome.substr(8, 11) + '<br />') //Do 8 ao 11
+
+        //Trim - Remove os espaços contidos em uma String
+        document.write('<h5>Trim</h5>');
+        document.write('  -  ' + 'Douglas Tott'.trim() + '  -  ' + '<br />');
+        var nome = 'Douglas Tott';
+        document.write('  -   ' + nome.trim() + '   -   ');
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

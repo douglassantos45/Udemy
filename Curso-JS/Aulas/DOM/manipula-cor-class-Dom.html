@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mudando cor da Classe</title>
+
+    <style>
+        
+        .estilo1 {
+            background: red;
+            color: #FFf;
+        }
+
+        .estilo2 {
+            background-color: blue;
+            color: #FFF;
+            font-size: 25px;
+            text-align: center;
+            height: 50px;
+        }
+
+    </style>
+
+    <script>
+    
+        function mudarClasse() {
+
+            document.getElementById(' mudarCor ').className = 'estilo2';//Para pegar um valor da Classe utiliza-se a propriedade ClassName passando o valor da classe a ser trocada, no caso a case estilo2
+        }
+    
+    </script>
+
+</head>
+<body>
+    
+    <div id="mudarCor" class="estilo1" >Mudando a Cor</div>
+    <hr>
+
+    <button onclick="mudarClasse()">Aplicar Mudança</button>
+</body>
+</html>

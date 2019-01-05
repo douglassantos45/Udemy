@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        function distribuiCaracterie() {
+            //Selecionar o Valor
+            var caracter = document.getElementById('entrada').value.trim(); //Recupera o valor contido dentro do elemnto
+            document.getElementById('entrada').value = ' ';//Limpar o campo
+            
+        //Eliminando espaços em brancos com o TRIM
+        //caracter.trim();
+
+        //Lógica do programa
+        switch(caracter) {
+            //Adicionando os números
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+                //document.getElementById('apenas_numeros').value += caracter;//Recurar a informação concatenando 
+                document.getElementById('apenas_numeros').value = caracter; //Se for números vai pegar o valor do caracter e passado para o value
+                break;
+            //Adicionando os caracteries
+            default:
+                //document.getElementById('apenas_letras').value += caracter;//Recurar a informação concatenando 
+                document.getElementById('apenas_letras').value = caracter; //Se for letras vai pegar o valor do caracter e passado para o value;
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" placeholder="Digite um caracterie" onkeyup="distribuiCaracterie()" id="entrada">
+    <hr>
+
+    <span>Letras</span>
+    <input id="apenas_letras" type="text" disabled>
+
+    <span>Números</span>
+    <input id="apenas_numeros" type="text" disabled>
+
+</body>
+</html>

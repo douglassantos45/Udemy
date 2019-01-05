@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos do Teclado</title>
+
+    <script>
+    
+        //Eventos do Mouse
+        /*
+            onkeydown=""  -  Quando aperta a tecla, 
+            onkeyup=""  -  Quando solta uma tecla já apertada,
+            onkeypress=""  -  Quando presiona uma tecla Só não funciona com o CTRL,  
+        */
+
+        function acao () {
+
+            alert('Ação do Teclado!');
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    <div style="margin: 10px auto;">
+
+        <input onkeydown="acao()" type="text">
+        <input onkeyup="acao()" type="text">
+        <input onkeypress="acao()" type="text">
+
+    </div>
+
+</body>
+</html>

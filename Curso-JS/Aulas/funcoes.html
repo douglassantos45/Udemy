@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usando funções</title>
+
+    <script>
+        
+        function calcularAreaTerreno (largura, comprimento) {
+            
+            //lógica 
+            var area = largura * comprimento;
+            //document.write(area);  //Renorna uma valor junto com a função (NÃO recomendado)
+
+            return area;
+        }
+        /*
+        //Chamando função com saída para o usuário
+
+        //document.write('O Terreno possui ' + calcularAreaTerreno(15, 25) + ' metros quadrados'); //Passando parâmetros 
+
+        //Chamando função com saída para o usuário usando variáveis
+
+        var area = calcularAreaTerreno(15, 25);
+
+        document.write('O Terreno possui ' + area + ' metros quadrados'); */
+
+        
+        //Usando Prompt para passar parâmentros
+
+        /*var largura = prompt('Informe a largura do terreno: ');
+        var comprimento = prompt('Informe o comprimento do terreno: ');
+
+        largura = parseInt(largura); //Convertendo os valores 
+        comprimento = parseInt(comprimento); //convertendo os valores
+
+        area = calcularAreaTerreno(largura, comprimento);
+
+        document.write('O Terreno possui ' + area + ' metros quadrados');*/
+
+        //Flexibilidade das funções
+
+        function soma(a , b){
+            
+            // Corrigindo apenas um parâmetro, "NOT A NUMBER"
+            b = b === undefined ? 0 : b; //Ou seja, verificar se o valor é Indefinido(inválido) ou se b foi digitado, se não, atribui a ele o valor ZERO para não ocorrer erros. Se houver valor em B, ele retorna o valor normalmente
+            return a + b;
+        }
+
+        console.log(soma(7, 7));
+        console.log(soma(7,8,9)); //Passando mais parâmetros o JS vai desconsiderar o valor a mais ou seja o 9 e fazer somente a soma de 7 e 8
+        console.log(soma(7)); //Passando apenas um parâmentro, o JS vai trata-lo como "NOT A NUMBER", para corrigir tem que ir na função
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
