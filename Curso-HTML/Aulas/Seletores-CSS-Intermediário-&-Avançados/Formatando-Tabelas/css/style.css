@@ -1,0 +1,33 @@
+body {
+	font-family: "Trubechet MS", Helvetica, sans-sarif;
+}
+
+table {
+	width: 600px;
+	border-collapse: separate; /*collapse* ela fica uma colada na outra */ 
+}
+
+th, td {
+	padding: 7px;
+}
+
+th {
+	text-transform: uppercase; /* Deixa todas as letras em maiusculo*/
+	border-top: 1px solid #999;	
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 90%; /* 90 porcento do seu tamanho atual */
+	letter-spacing: 0.1em; /* Espaçamento entre as LETRAS */
+}
+
+tr.alternado {
+	background-color: gray;
+}
+
+.numero {
+	text-align: right;
+}
+
+tr:hover {
+	background: #c3e6e5;
+}

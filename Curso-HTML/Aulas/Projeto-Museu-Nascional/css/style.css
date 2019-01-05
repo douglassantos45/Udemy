@@ -1,0 +1,224 @@
+/* Estrutura do Site
+-------------------------------------------*/
+
+
+body {
+	background: #f4f2ec url(../img/fundo.png) repeat-x;
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+
+/** Formatando os Links Gerais **/
+
+a:link, a:active, a:visited {
+	color: #af670a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #227115;
+}
+
+
+#container {
+	width: 1080px; /* Largura pardão usada */
+	margin: 0 auto; /* Centralizar o container */
+
+}
+
+/* Configurando Logo
+-------------------------------------------*/
+
+
+#logo h1 {
+	float: left;
+}
+
+#logo a {
+	width: 248px;
+	/* width e heigth são os tamanhos padrão da imagem logo.png */
+	height: 21px;
+	text-indent: -9999px; /* para que o nome em h1 suma. E só aparece caso a logo.png não carregue */
+	display: block;
+	background: url(../img/logo.png) no-repeat;
+}
+
+
+/* Barra de Navegação
+-------------------------------------------*/
+
+
+header {
+	padding: 15px 0; /* padding luperior e inferior de 15 e as laterais de 0 */
+	height: 55px;
+}
+
+nav#navagacao-topo ul {
+	list-style: none;
+	margin: 20px;
+	float: right; /* Flutuar a ul para a direita */
+}
+
+nav#navagacao-topo  ul li {
+	float: left; /* Flutuando os itens do li para a esquerda */
+}
+
+nav#navagacao-topo  ul li a:link {
+	display: block;
+	margin-right: 25px;
+	padding-bottom: 3px;
+	text-transform: uppercase; /* Deixar as letras em maiúsculo */
+}
+
+nav#navagacao-topo  ul li a:hover {
+	border-bottom: 1px solid #535858;
+}
+
+
+/* Principal
+-------------------------------------------*/
+
+
+#conteudo {
+	width: 710px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+/** Os valores de width e heigth tem que está de arcordo com o valor do container principal**/
+
+/* Formatando Área Lateral
+-------------------------------------------*/
+
+aside {
+	width: 350px;
+	float: right; /* Vai flutuar a direita */
+	background: #ebe7dd;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+}
+
+
+section#visita {
+	background: #cdc8b1;
+	padding: 10px 27px 27px 27px;
+	margin-top: 10px;
+}
+
+#visita h4 {
+	color: #86521a;
+	text-transform: uppercase; /* Deixar as letras maiúsculas */
+	padding-bottom: 3px;
+	margin-bottom: 0;
+}
+
+#galeria {
+	padding: 0 27px 0 27px;
+}
+
+section#galeria a {
+	display: block;
+	background: url(../img/fundo-foto.png) no-repeat;
+	float: left; /* Fazer todas as imagens flutuarem */
+	padding: 17px 15px 18px 15px;
+	margin: 10px 0 0 20px;
+}
+
+section#galeria h4 {
+	color: #86521a;
+	text-transform: uppercase; /* Deixar as letras maiúsculas */
+	padding-bottom: 3px;
+	margin-bottom: 0;
+}
+
+section#galeria img {
+	height: 93px;
+	width: 93px;
+	margin-left: 3px;
+	margin-top: 3px;
+}
+
+
+/* Área Postagem
+-------------------------------------------*/
+
+
+#postagem h3{
+	color: #227115;
+	font-size: 1.0em;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+#postagem article#video {
+	float: left;
+	width: 310px;
+	margin-left: 25px;
+}
+
+#postagem article#mapa {
+	float: left;
+	width: 310px;
+	margin-left: 37px;
+}
+
+#postagem article#exposicoes {
+	float: left;
+	width: 310px;
+	margin: 15px 0 0 25px;
+}
+
+#postagem article#historia {
+	float: left;
+	width: 310px;
+	margin: 15px 0 0 37px;
+}
+
+
+/* Formatando Formulário
+-------------------------------------------*/
+
+
+input {
+	height: 20px;
+	width: 120px;
+	border: none;
+	background: #FFF;
+	font-size: 1em;
+}
+
+input.campo {
+	border: 1px  solid #ada484;
+}
+
+input.botao {
+	background: #9b9271;
+	color: white;
+	width: 100%; /* 100% para ocupar todo o espaçõ no container */
+	height: 40px;
+	font-size: 1.2em;
+	border-radius: 5px;
+}
+
+fieldset {
+	border: none;
+}
+
+fieldset legend {
+	display: none;
+}
+
+
+/* Rodapé
+-------------------------------------------*/
+
+
+footer {
+	padding: 20px 0 30px 0;
+	text-align: center;
+	background: url(../img/fundo-rodape.png) no-repeat center top;
+}
+
+footer>p a { /* Selecionar a tag filho da tag footer */
+	padding: 2px 10px;
+}

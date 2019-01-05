@@ -1,0 +1,58 @@
+body {
+	font-family: "Trubechet MS", Helvetica, sans-sarif;
+	background: #643d87 url(../img/fundo.jpg) no-repeat top center;
+}
+
+
+#container {
+	width: 400px;
+	height: 300px;
+	background-color: rgba(255,255,255,0.3) ;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center; /* Centraliza o texto e no caso a imagem também */
+}
+
+#container img{
+	height: 120px;
+	margin-bottom: 30px;
+	margin-top: -60px;
+}
+
+input {
+	height: 40px;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #FFF;
+	padding-left: 40px; /* Espaçamento para colocar as imagens ao lado do E-mail e da Senha */
+	border: none;
+	background-repeat: no-repeat; /* Atributo para que as imagens do input não repitam, é melhor usar direto em um input pai para não precisar repetir o no-repeat duas vezes */
+	background-position: 10px; /* Posição para as imagens do input */
+}
+
+input.email {
+	background-image: url(../img/icone-usuario.png);
+	font-size: 13px;
+}
+
+input.senha {
+	background-image: url(../img/icone-cadeado.png);
+	font-size: 13px;
+}
+
+input.submit {
+	color: #FFF;
+	background-color: #f79300;
+	border: 2px solid #db7900;
+	padding: 5px 20px; /* 5 superior e 20 lateral */
+	height: 45px;
+	width: 90%;
+	background: -0-linear-gradient(to bottom, #faa600, #f68a00); /* Utiliza-se para browsers mais antigos */
+	background: -moz-linear-gradient(to bottom, #faa600, #f68a00); /* Utiliza-se para browsers mais antigos */
+	background: -webkit-linear-gradient(to bottom, #faa600, #f68a00); /* Utiliza-se para browsers mais antigos */
+	background: linear-gradient(to bottom, #faa600, #f68a00); /* Gradiente, a primeira cor é a de cima e a segunda a de baixo. Função para criar gradientes */
+}

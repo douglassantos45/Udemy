@@ -1,0 +1,61 @@
+
+#container {
+	width: 800px;
+	margin: 1px auto; /* Recomendado para colocar uma DIV centralizada */
+}
+
+#img-formated {
+	width: 800px;
+}
+
+#principal {
+	background: #c5c5b2 url('../img/fundo.png');
+	font-size: 16px;
+}
+
+#menu {
+	background:#c5c5b2;
+	padding: 18px;
+	color: #4b566a;
+	font: bold 18px "Arial";
+}
+
+#menu a{
+	color: #4b566a;
+	text-decoration: none;
+	padding: 5px;
+}
+
+#conteudo {
+	background: #eaead9;
+	border: 1px  red;
+	padding: 10px;
+}
+
+#conteudo h1,h2,h3,h4{
+	font-weight: bold; /* Bold - Negrito */
+	color: #75754b;
+	font-family: Arial;
+	font-size: 1.2em; /* em - Medida relativa a DIV pai */
+}
+
+#rodape{
+	text-align: center;
+	font-weight: bold;
+	font-family: "Arial";
+
+}
+
+#contato {
+	margin-top: 10px;
+	font-size: 14px;
+	font-family: Arial;
+}
+
+.foto-campanha {
+	border: 10px solid #9c9c759c;
+}
+
+p {
+	text-align: justify;
+}
