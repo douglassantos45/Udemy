@@ -9,7 +9,7 @@ function tratarErro (erro) {
 		msg: erro.mensagem,
 		data: new Data //Criando uma nova instância de data
 	}*/
-	throw 'Ocorreu um Erro'; 
+	throw 'Ocorreu um Erro';
 	//Lança um Erro
 }
 
