@@ -4,7 +4,7 @@ function soma () {
 
 	for ( x in arguments ) {
 
-		soma += arguments[x];
+		soma += arguments[x]; //Arguments são registo de uma variável
 	}
 	return soma;
 }

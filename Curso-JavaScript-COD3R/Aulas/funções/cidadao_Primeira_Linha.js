@@ -53,7 +53,7 @@ executar(function () {
 })
 
 
-// Função pode retornar/conter um função
+// Função pode retornar/contém uma função
 
 function soma (a, b) {
 
@@ -66,5 +66,5 @@ function soma (a, b) {
 soma(2, 3)(4);// 4 é o valor de c
 
 // Outra forma de chamar a função, armazenando em uma variável
-const outraForma = soma(2, 3);
-outraForma(4);
+const outraForma = soma(2, 3);//Armazena o valor de A e B
+outraForma(4); //Chama a função soma passando o valor de C
