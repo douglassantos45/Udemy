@@ -14,9 +14,9 @@ const subtracao = function (x, y) {
 //Chamando a função Depois
 console.log(subtracao(4, 7));
 
-// Named Function
+// Named Function expression (quase nunca usada)
 
-const multiplicacao = function (x, y) {
+const multiplicacao = function multiplicacao (x, y) {
 	return x * y;
 }
 

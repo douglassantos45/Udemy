@@ -7,11 +7,15 @@
     <title>Manipulando Cor do Fundo</title>
 
     <script>
-        
-        function mudarCordeFundo ( cordeFundo ) {
+
+        function mudarCordeFundo ( cordeFundo, largura, altura, nome ) {
 
             //Atributo de CSS que são aplicado, os atributos de stylee não pode ser usados com - "traço", exemplo, background-color, tem que ser usado assim: backgroundColor, com o ultimo atributo em maiúsculo
-            document.getElementById('div_a_ser_mudada').style.background = cordeFundo;//Estamos selecionando o style é a partir do atributo style, que está no elemento div, atruindo a cordeFundo recebido como parametro do input como; red, green e blue
+            document.getElementById('div_a_ser_mudada').style.background = cordeFundo;//Estamos selecionando o style. É a partir do atributo style, que está no elemento div, atruindo a cordeFundo recebido como parametro do input como; red, green e blue
+
+            document.getElementById('div_a_ser_mudada').style.width = largura;
+            document.getElementById('div_a_ser_mudada').style.height = altura;
+            document.getElementById('mudarNome').innerHTML= nome; // Mudar Nome da Tag
         }
 
     </script>
@@ -19,13 +23,15 @@
 </head>
 <body>
     
-    <input type="submit" onclick="mudarCordeFundo('red')" value="Vermelho">
-    <input type="submit" onclick="mudarCordeFundo('green')" value="Verde">
-    <input type="submit" onclick="mudarCordeFundo('blue')" value="Azul">
+    <input type="submit" onclick="mudarCordeFundo('red', '200px', '300px', 'Jose carlos')" value="Vermelho">
+    <input type="submit" onclick="mudarCordeFundo('green', '100px', '200px')" value="Verde">
+    <input type="submit" onclick="mudarCordeFundo('blue', '150px', '250px')" value="Azul">
     <hr>
 
-                               <!--A partir do Style, o mesmo do function-->
-    <div id="div_a_ser_mudada" style="border: 1px solid gray; width: 300px; height: 300px;"></div>
+                               <!--A partir do Style, que é o mesmo do function-->
+    <div id="div_a_ser_mudada" style="border: 1px solid gray; width: 300px; height: 300px;">
+        <p id="mudarNome">Douglas</p>
+    </div>
 
 </body>
 </html>
