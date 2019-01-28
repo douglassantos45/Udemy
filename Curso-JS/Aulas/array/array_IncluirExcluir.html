@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Array Incluir e Excluir</title>
+	<link rel="stylesheet" href="">
+
+	<script>
+
+		lista_Frutas = Array('Banana', 'Maçã');
+
+		// Adicionando elementos
+
+		//Método Push adiciona elementos na Ultima opção
+
+		lista_Frutas.push('Uva');
+
+		//Método unshift adiciona elementos na  primeira opção
+
+		lista_Frutas.unshift('Melão');
+
+
+
+		// Excluindo Elementos
+
+		//Método Pop exclui elementos na primeira opção, independentimente do elemento
+
+		lista_Frutas.pop();
+
+		//Método Shift excluir elementos na ultima opção, independentimente do elemento
+
+		lista_Frutas.shift();
+
+		console.log(lista_Frutas);
+		document.write("<h2>" + lista_Frutas + "</h2>");
+
+
+		// Com Arrays Multidimensionais
+
+		lista_coisas = Array();
+
+			lista_coisas['frutas'] = Array();
+			lista_coisas['pessoas'] = Array();
+
+
+		//Adicionando elementos em Arrays multidimensionais
+
+		lista_coisas['frutas'].push('Uva', 'Maçã', 'Banana');
+
+		lista_coisas['pessoas'].push('João', 'Paulo', 'Marcelo');
+
+		var elementosRemovidos = lista_coisas['pessoas'].splice(2);//Removendo o 3 elemento que está na posição 2
+		//lista_coisas['pessoas'].shift();
+
+		console.log(lista_coisas);
+		document.write(lista_coisas['frutas']);
+		document.write("<br />");
+		document.write(lista_coisas['pessoas']);
+		document.write("<br />");
+		document.write('Removido = ' + elementosRemovidos);
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

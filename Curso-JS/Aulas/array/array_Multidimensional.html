@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Multidimensional</title>
+	<meta charset="utf-8">
+
+	<script>
+
+		var lista_Objetos = Array();
+
+			lista_Objetos['Frutas'] = Array('Banana', 'Maçã', 'Morango');
+
+			lista_Objetos['Pessoas'] = Array('Joãozinho', 'Marcelinha', 'Marlinhos');
+
+		console.log(lista_Objetos);
+
+		//Percorrer com For
+		for ( const listaFrutas in lista_Objetos["Frutas"] ) {
+
+			document.write(listaFrutas + " " + lista_Objetos["Frutas"][listaFrutas])
+			document.write("<br />");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -7,6 +7,7 @@ const produto = Object.preventExtensions({
 	tag: 'Promoção'
 })
 
+console.log('Extensível:', Object.isExtensible(produto))// Verifica se o produto é Extensions
 console.log(produto);
 
 produto.nome = 'Nesquik';
