@@ -1,8 +1,9 @@
 function boaNoticia (nota) {//Passando nota como parâmetro para receber um valor
+	
 	if ( nota >= 7 ) {
-		console.log('Aprovado com ' + nota);
+		console.log('Aprovado com média ' + nota);
 	} else {
-		console.log('Reprovado com ' + nota);
+		console.log('Reprovado com média ' + nota);
 	}
 }
 
@@ -16,6 +17,7 @@ console.log();
 //Testando se For Verdadeiro o valor que está no IF
 //
 function seForVerdade (valor) {
+	
 	if (valor) {
 		console.log('É verdade... ' + valor);
 	} else {
