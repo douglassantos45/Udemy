@@ -1,6 +1,6 @@
 const aprovados = ['João', 'Frances', 'Anna Júlia', 'Rayane'];
 
-//Percorrenddo aprovados com função que pega o nome e o indice do array. O indice tem que ser o segundo elemento da função
+//Percorrendo aprovados com função que pega o nome e o indice do array. O INDICE tem que ser o segundo elemento da função
 aprovados.forEach(function(nome, indice){
 
 	console.log(`${indice + 1}) ${nome}`);

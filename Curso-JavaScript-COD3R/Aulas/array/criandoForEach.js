@@ -1,4 +1,6 @@
 //Criando o forEach próprio
+
+//Relacionando o ForEach criado ao Object prototype. O parâmetro da função, podera ser qualquer nome, não apenas callback
 Object.prototype.forEach2 = function(callback) {
 
     for( let i = 0; i < this.length; i++ ) {
