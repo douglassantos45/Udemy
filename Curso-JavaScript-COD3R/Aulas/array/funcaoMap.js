@@ -1,6 +1,7 @@
+
 const numeros = [1, 2, 3, 4, 5];
 //Multipliicando valores
-resultado = numeros.map(function(elemento){
+let resultado = numeros.map(function(elemento){
 	return elemento * 2;
 })
 
@@ -9,8 +10,8 @@ console.log(resultado);
 
 //Criando funções
 
-//Adicionando 10 aos elementos
-const soma10 = elemento => elemento + 10;
+//Adicionando 10, aos elementos
+const soma10 = elemento => elemento + 10;//função arrow
 
 resultado = numeros.map(soma10);
 console.log(resultado)
@@ -35,3 +36,4 @@ console.log(resultado);
 
 //Com forEach
 resultado.forEach(elemento => console.log(elemento))
+
