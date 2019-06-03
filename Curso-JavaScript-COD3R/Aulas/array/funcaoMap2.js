@@ -1,7 +1,7 @@
 //Criando o prório Map
 Array.prototype.map2 = function(callback) {
     //criando um novo array
-    const newArray = [];//Recebendo os valores do retorn
+    const newArray = [];//Recebendo os valores do retorno
 
     //Criando a lógica
     for ( let i = 0; i < this.length; i++ ) {
