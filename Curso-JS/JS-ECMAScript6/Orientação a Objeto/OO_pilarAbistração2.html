@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Babel para funcionamento do ECMAScript no navegador-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Declarando Variáveis</title>
+
+    <script type="text/babel">
+
+        class ContaBancaria {
+
+            construtor () {
+                this.agencia = 444;
+                this.numeroConta = 45332355;
+                this.saldo = 300;
+                this.limite = 150;
+            }
+
+            depositar(valorDeposito) {
+                this.saldo = saldo + valorDeposito
+            }
+
+            sacar(saqueValor) {
+                this.sald = sald - saqueValor
+            }
+
+            consultarSaldo() {
+                return this.saldo
+            }
+
+        }
+
+        let x = new ContaBancaria();
+        x.depositar = 400;
+        
+        console.log(x.consultarSaldo())
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- testando babel -->
+    <div id="Teste"></div>
+
+</body>
+</html>

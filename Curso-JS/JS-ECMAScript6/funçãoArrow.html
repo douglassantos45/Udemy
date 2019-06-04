@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Babel para funcionamento do ECMAScript no navegador-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Declarando Variáveis</title>
+
+    <script type="text/babel">
+
+        /* Função Anonima
+
+        let Quadrado = function(x){
+            return x * x
+        }
+        document.write(Quadrado(4))
+*/
+        //Arrow Function 
+        /*let dobro = (x) => {
+            return x + x
+        }
+        document.write(dobro(2));
+
+        */
+
+        //Função com retorno implicito
+        
+        let quadrado = x => x * x //Return implicito
+
+        console.log(quadrado(34));
+        document.write(quadrado(34))
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- testando babel -->
+    <div id="Teste"></div>
+
+</body>
+</html>

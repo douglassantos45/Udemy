@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Babel para funcionamento do ECMAScript no navegador-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Declarando Variáveis</title>
+
+    <script type="text/babel">
+
+        var series = 'Friends'
+
+        {
+            //Criando variável em bloco
+            var series = 'The Walking Dead'
+            console.log("Dentro do block" + series)
+        }
+
+        console.log("Fora do bloco" + series)
+
+    </script>
+
+    <script type="text/babel">
+
+        //Let não sobre hosting 
+        let series = 'The Big Bang'
+
+        {
+            //Não pode usar o mesmo nome usado já com o let
+            //var series = 'Friends'
+
+            var serie = 'Friends'
+            console.log("Dentro do bloco " + serie)
+        }
+
+        console.log("Fora do block " + series)
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- testando babel -->
+
+</body>
+</html>

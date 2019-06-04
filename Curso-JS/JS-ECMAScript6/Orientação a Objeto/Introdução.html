@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Babel para funcionamento do ECMAScript no navegador-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Declarando Variáveis</title>
+
+    <script type="text/babel">
+
+        //Modelo Procedural
+        let a = 10
+        let b = 4
+        var operador = 'mult'
+
+        function Calculadora(x, y) {
+            if (operador === 'mult') return x * b
+        }
+
+        document.write(Calculadora(a, b, operador))
+
+        
+        //Orientada a Objeto
+        class Calculadora2 {
+            construtor () {
+                this.c = 4
+                this.d = 5
+                this.operador = 'mult'
+            }
+
+            calcular() {
+                if(this.operador === 'mult') {
+                    document.write(this.c + this.d)
+                }
+            }
+
+            calculadora = new Calculadora2()
+            calculadora.calcular()//Erro
+        }
+
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- testando babel -->
+    <div id="Teste"></div>
+
+</body>
+</html>

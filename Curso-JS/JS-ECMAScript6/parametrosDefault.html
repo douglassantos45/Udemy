@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Babel para funcionamento do ECMAScript no navegador-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Declarando Variáveis</title>
+
+    <script type="text/babel">
+
+        //Definindo default Fubá e Gaba para a função
+        function Historia (personagem = "Fubá", vilao = "Gaba") {
+            document.write(`Era uma vez o ${personagem} que foi pego 
+            pelo ${vilao} `)
+        }
+
+        Historia('Cachorro', 'Pião')
+        Historia(undefined, 'Gato')
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- testando babel -->
+    <div id="Teste"></div>
+
+</body>
+</html>

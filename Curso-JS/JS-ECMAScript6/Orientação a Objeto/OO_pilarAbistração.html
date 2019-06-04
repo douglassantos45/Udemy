@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Babel para funcionamento do ECMAScript no navegador-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Declarando Variáveis</title>
+
+    <script type="text/babel">
+
+        //Modelo do Objeto
+        class ContaBancaria {
+
+            //Método construtor. Método com instruções a serem executadas
+            construtor () {
+                //Atributos
+                this.agencia = 1054
+                this.saldo = 50
+                this.limite = 300
+                //this.numeroConta = 040052
+            }
+
+            //Ações ou Métodos
+            depositar(valorDeposito) {
+                //Recuperando valor saldo pelo this para atualizar o deposito
+                this.saldo = saldo + valorDeposito
+            }
+
+            sacar(valorSaque) {
+                this.saldo = saldo - valorSaque
+            }
+
+            consultarSaldo() {
+                return this.saldo
+            }
+
+        }
+
+        //Tranformando classe em objeto
+        let x = new ContaBancaria()
+        //com o mesmo objeto só que são destintos
+        let y = new ContaBancaria()
+        
+        //Mostrando Saldo
+        console.log(x.consultarSaldo());
+        x.depositar(450)
+        console.log(x.consultarSaldo())
+        x.sacar(200)
+        console.log(x.consultarSaldo())
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- testando babel -->
+    <div id="Teste"></div>
+
+</body>
+</html>
