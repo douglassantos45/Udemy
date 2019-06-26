@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teclado - Elemento onkeydown, quando digita um valor</title>
+
+    <!--onkeydown com função-->
+    <script>
+        function acao(){
+            alert('Alert com função');
+        }
+    </script>
+
+</head>
+<body>
+    <!-- onkeydown sem função-->
+    <input onkeydown="alert('Alert sem função')"type="text" placeholder="Sem Função">
+
+    <!-- onkeydown com função-->
+    <input onkeydown="acao()" type="text" placeholder="Com Função">
+</body>
+</html>

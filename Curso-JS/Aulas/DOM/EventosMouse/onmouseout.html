@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse - Elemento onmouseout, quando remove a seta do mouse</title>
+
+    <!--onmouseout com função-->
+    <script>
+        function acao(){
+            alert('Alert com função');
+        }
+    </script>
+
+</head>
+<body>
+    <!-- onmouseout sem função-->
+    <div onmouseout="alert('Alert sem função')" style="width: 150px; height: 150px; background: gray;"></div>
+
+    <!-- onmouseout com função-->
+    <div onmouseout="acao()" style="width: 150px; height: 150px; background: blue;"></div>
+</body>
+</html>

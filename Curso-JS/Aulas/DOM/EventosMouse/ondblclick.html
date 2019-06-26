@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse - Elemento ondblclick, 2 cliques</title>
+
+    <!--ondblclick com função-->
+    <script>
+        function acao(){
+            alert('Alert com função');
+        }
+    </script>
+
+</head>
+<body>
+    <!-- ondblclick sem função-->
+    <div ondblclick="alert('Alert sem função')" style="width: 150px; height: 150px; background: gray;"></div>
+
+    <!-- ondblclick com função-->
+    <div ondblclick="acao()" style="width: 150px; height: 150px; background: blue;"></div>
+</body>
+</html>
